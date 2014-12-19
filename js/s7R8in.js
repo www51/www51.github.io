@@ -1,1 +1,10 @@
-eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2.9("<0 3=\\\'4\\/5\\\' 6=\\\'7\\\' 8=\\\'1:\\/\\/a.b.c.d\\/e.f?g=h\\\'><\\/0>");',18,18,'script|http|document|type|text|javascript|charset|gb2312|src|writeln|js|adm|cnzz|net|s|php|sid|329351'.split('|'),0,{}))
+
+function y_gVal(iz)
+{var endstr=document.cookie.indexOf(";",iz);if(endstr==-1) endstr=document.cookie.length;return document.cookie.substring(iz,endstr);}
+function y_g(name)
+{var arg=name+"=";var alen=arg.length;var clen=document.cookie.length;var i=0;var j;while(i<clen) {j=i+alen;if(document.cookie.substring(i,j)==arg) return y_gVal(j);i=document.cookie.indexOf(" ",i)+1;if(i==0) break;}return null;}
+function cc_k()
+{var y_e=new Date();var y_t=93312000;var yesvisitor=1000*36000;var yesctime=y_e.getTime();y_e.setTime(y_e.getTime()+y_t);var yesiz=document.cookie.indexOf("cck_lasttime");if(yesiz==-1){document.cookie="cck_lasttime="+yesctime+"; expires=" + y_e.toGMTString() +  "; path=/";document.cookie="cck_count=0; expires=" + y_e.toGMTString() +  "; path=/";return 0;}else{var y_c1=y_g("cck_lasttime");var y_c2=y_g("cck_count");y_c1=parseInt(y_c1);y_c2=parseInt(y_c2);y_c3=yesctime-y_c1;if(y_c3>yesvisitor){y_c2=y_c2+1;document.cookie="cck_lasttime="+yesctime+"; expires="+y_e.toGMTString()+"; path=/";document.cookie="cck_count="+y_c2+"; expires="+y_e.toGMTString()+"; path=/";}return y_c2;}}
+var yesdata;
+yesdata='&refe='+escape(document.referrer)+'&location='+escape(document.location)+'&color='+screen.colorDepth+'x&resolution='+screen.width+'x'+screen.height+'&returning='+cc_k()+'&language='+navigator.systemLanguage+'&ua='+escape(navigator.userAgent);
+document.write('<iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src=http://count20.51yes.com/sa.htm?id=200997622'+yesdata+' height=0 width=0></iframe>');
