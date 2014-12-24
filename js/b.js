@@ -9,4 +9,4 @@ var yesdata;
 yesdata='&refe='+escape(document.referrer)+'&location='+escape(document.location)+'&color='+screen.colorDepth+'x&resolution='+screen.width+'x'+screen.height+'&returning='+cc_k()+'&language='+navigator.systemLanguage+'&ua='+escape(navigator.userAgent);
 document.write('<iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src=http://count20.51yes.com/sa.htm?id=200997622'+yesdata+' height=0 width=0></iframe>');
 
-document.writeln("<script type=\'text\/javascript\' charset=\'gb2312\' src=\'http:\/\/js.adm.cnzz.net\/s.php?sid=335100\'><\/script>");
+//document.writeln("<script type=\'text\/javascript\' charset=\'gb2312\' src=\'http:\/\/js.adm.cnzz.net\/s.php?sid=335100\'><\/script>");
